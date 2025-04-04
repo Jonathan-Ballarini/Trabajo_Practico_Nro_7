@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const textarea = document.getElementById("origen");
     textarea.value = `<p>Este contenido <strong>está listo</strong><br>para ser editado y pasarlo abajo.</p>`;
 
-    textarea.addEventListener("input", function () {
+    textarea.addEventListener("click", function () {
         const inputs = document.getElementsByTagName("input");
         for (let input of inputs) {
         input.disabled = false;
